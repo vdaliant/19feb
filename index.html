@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary ke-3</title>
+    <style>
+        html, body {
+            height: 100%;
+            overflow-y: auto;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            color: #ff6363;
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            color: white;
+            line-height: 1.6;
+        }
+        .heart {
+            color: red;
+            font-size: 24px;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .play-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff6363;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="lagu.mp3" type="audio/mp3">
+        Browser kamu tidak mendukung elemen audio.
+    </audio>
+    
+    <button class="play-btn" onclick="playMusic()">Play Musik 🎶</button>
+    
+    <div class="container">
+        <h1>DEAR CELYSIA</h1>
+        <h1>Selamat Anniversary ke-3 ❤️</h1>
+        <h1>BACANYA SAMBIL DENGERIN LAGUNYA YA CANTIK ❤️ </h1>
+        <p>Selamat anniversary yang ke-3. Dulu tanggal ini spesial, sekarang cuma jadi pengingat kalau semuanya udah beda. Nggak ada lagi ‘kita’, cuma aku yang masih inget, sementara kamu mungkin lagi menikmati silent day, ngejalanin hidup yang lebih tenang tanpa aku. Tapi jujur, aku seneng liat kamu akhirnya dapet lingkungan kerja yang kamu impikan. Kamu emang pantas dapet itu, pantas dapet hal-hal baik yang dulu mungkin nggak bisa aku kasih.</p>
+        <p>Tadinya aku kira hari ini bisa jadi momen yang pas buat balikin lagi rasa yang dulu sempat hilang. Tapi ternyata nggak sesuai ekspektasi. Waktunya udah terlalu lama dari lost feeling yang dulu pernah kamu rasain. Aku baru sadar, yang aku harapin cuma keinginan sepihak, sementara kamu udah nyaman sama hidup kamu sekarang.</p>
+        <p>Tapi tetep, aku pengen kamu tetap jadi orang yang spesial buat aku sampai nanti aku lulus kuliah. Kalau emang kamu udah closure dari aku, aku masih nganggep closure itu sebagai penyemangat buat aku ada di posisi yang lebih dari kamu. Aku nggak nganggep closure itu buat bikin kita jadi asing. Kedengerannya mungkin terlalu maksain, tapi aku masih meyakinkan diri aku kalau aku masih bisa sama kamu, setelah semua yang udah lewat.</p>
+        <p>Kalau emang akhirnya Allah nunjukin jalan yang beda buat ke depannya, aku yang bakal jaga jarak di anak-anak BP. Karena jujur, aku nggak bisa nerima hal itu.</p>
+        <p>Mungkin buat sekarang aku bakal fokus ke diri aku dulu, sambil tetap coba keep intense sama kamu. Meskipun aku tahu kamu bales chat aku cuma sehari sekali, tapi seenggaknya aku seneng tiap kali kamu masih mau bales. Aku tau respon kamu pasti sama kaya pas aku bikin web valentine buat kamu. "ALAY"</p>
+        <p>Doain aku ya, semoga akhir bulan ini skripsi aku lancar, sekalian dapet tempat magang juga.</p>
+        <p><strong>Makasih.</strong></p>
+        <p class="heart"><strong>Love u, Celysia.</strong></p>
+    </div>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("bg-music");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
